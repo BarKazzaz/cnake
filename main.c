@@ -40,7 +40,7 @@ void updateBoard() {
     int i = 0;
 
     // M+1 cause we need the \n at the end
-    char buff[N * (M)] = "0000000000000000";
+    char buff[N * (M+1)] = "0000\n0000\n0000\n0000\n";
     buff[position[0][0] * N + position[0][1]] = '>';
     printf("\r%s", buff);
     fflush(stdout);
